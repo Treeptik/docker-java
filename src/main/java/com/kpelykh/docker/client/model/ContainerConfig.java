@@ -30,6 +30,7 @@ public class ContainerConfig {
     @JsonProperty("Volumes")      private Object    volumes;
     @JsonProperty("VolumesFrom")  private String    volumesFrom;
     @JsonProperty("Entrypoint")   private String[]  entrypoint;
+    @JsonProperty("NetworkDisabled") private boolean networkDisabled;
 
 
     public String getHostName() {
@@ -38,6 +39,14 @@ public class ContainerConfig {
 
     public void setHostName(String hostName) {
         this.hostName = hostName;
+    }
+
+	public String getNetworkDisabled() {
+        return networkDisabled;
+    }
+
+    public void setNetworkDisabled(String networkDisabled) {
+        this.networkDisabled = networkDisabled;
     }
 
     public String[] getPortSpecs() {
