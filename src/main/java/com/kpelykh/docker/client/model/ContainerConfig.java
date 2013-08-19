@@ -41,11 +41,11 @@ public class ContainerConfig {
         this.hostName = hostName;
     }
 
-	public String getNetworkDisabled() {
+	public boolean getNetworkDisabled() {
         return networkDisabled;
     }
 
-    public void setNetworkDisabled(String networkDisabled) {
+    public void setNetworkDisabled(boolean networkDisabled) {
         this.networkDisabled = networkDisabled;
     }
 
